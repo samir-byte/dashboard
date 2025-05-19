@@ -5,7 +5,7 @@ export default function Logo() {
   return (
     <Link to="/" className="flex items-center gap-2 font-semibold">
       <Package2 className="h-6 w-6" />
-      <span className="">Acme Inc</span>
+      <span className="">Logo</span>
     </Link>
   );
 }

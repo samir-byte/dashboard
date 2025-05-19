@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React, { useCallback, useEffect } from "react";
 import { Input } from "../ui/input";
 import { useDebounce } from "use-debounce";
 import { useSearchParams } from "react-router-dom";
@@ -31,7 +31,7 @@ export default function TableSearchInput({
     });
   }, []);
 
-  React.useEffect(() => {
+  useEffect(() => {
     handleSettingSearchParams(debouncedValue);
   }, [debouncedValue, handleSettingSearchParams]);
   return (
